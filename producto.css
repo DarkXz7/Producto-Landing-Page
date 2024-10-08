@@ -1,0 +1,931 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap");
+
+/*--------------------NAVBAR--------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: hsl(39, 35%, 85%) !important;
+}
+
+.navBarContainerGeneral,
+.navBarBotonesIzquierdaContainer,
+.navbarIniciarCrearCuentaContainer,
+.navbarLogosContainer,
+.NavbarItems,
+.categorias {
+    display: flex;
+}
+
+.navBarTittleContainer {
+    display: flex;
+    text-align: left;
+    position: relative;
+    left: -400px;
+    /* Asegura que esté pegado al borde izquierdo */
+}
+
+.navBarBotonesIzquierdaContainer {
+    /*Esto centra los botones de la navBar de inicio, categorias y catalogo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -300px;
+    gap: 25px;
+}
+
+.navbarSearchBarContainer {
+    /*Esto centa la SearchBar*/
+    position: relative;
+    left: -200px;
+}
+
+.inicioButtonContainer,
+.catalogoButtonContainer,
+.catalogoButtonContainer,
+.navbarSearchBarContainer,
+.iniciarSesionButtonContainer,
+.CrearCuentaButtonContainer,
+.navbarLogosContainer,
+.categoriasButtonContainer {
+    margin-left: 26px;
+}
+
+.categoriasButtonContainer {
+    display: flex;
+}
+
+.navbarSearchBarContainer {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.inicioButton,
+.catalogoButton,
+.catalogoButton {
+    background-color: transparent;
+    /* Fondo transparente */
+    border: none !important;
+    /* Sin borde */
+    outline: none;
+    /* Elimina el contorno de enfoque */
+    border: 1px solid var(--verde-40);
+    background: var(--verde-40);
+}
+
+nav {
+    margin-top: 15px;
+}
+
+#textInicioCategoriasCatalogoFuente {
+    /*Fuente de los botones inicio, categorias y catalogo*/
+    color: var(--Negro, #000);
+    text-align: center;
+    font-family: var(--font-family-description, "Mukta Vaani");
+    font-size: var(--font-size-size-xs, 12px);
+    font-style: normal;
+    font-weight: 550;
+    line-height: 16px;
+
+    /* 133.333% */
+
+}
+
+#merkachecheresTittle {
+    color: var(--Negro, #0e0d0d);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 125% */
+    letter-spacing: -0.64px;
+    filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.4));
+}
+
+.navbarSearchBar {
+    display: flex;
+    width: 500px;
+    height: 40px;
+    padding: 14px var(--font-size-size-md, 20px);
+    border-radius: 2px;
+    background: var(--Blanco, #fff);
+    align-items: center;
+}
+
+.navBarTextContainer {
+    display: flex;
+    margin-bottom: 4px;
+    position: relative;
+    left: -5px;
+}
+
+#navbarText {
+    padding-top: 5px;
+    color: var(--blanco-marfil-80, #7e7d7c);
+    font-family: var(--font-family-labels, Roboto);
+
+    font-size: var(--font-size-size-xs, 12px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 166.667% */
+}
+
+.navbarSearchBarContainer {
+    filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.4));
+}
+
+/*Editar perfil*/
+.editarPerfilContainer {
+    display: flex;
+    gap: 100px;
+    
+}
+
+
+/*Editar perfil icono configuracion*/
+#configImgDerechaIcon {
+    width: 18px;
+    height: 18px;
+}
+
+.editarPerfilContainer {
+    gap: 5px;
+}
+
+/*Editar perfil Texto*/
+#editarPerfilText {
+    color: var(--Negro, #000);
+    font-family: Roboto;
+    font-size: var(--font-size-size-sm, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navbarLogosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    flex-shrink: 0;
+    position: relative;
+    left: -50px;
+    gap: 40px;
+    
+}
+
+.navBarContainerGeneral {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+nav {
+    margin-left: 250px;
+    display: flex;
+    height: 108px;
+    padding: var(--font-size-size-md, 20px) 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+/*--------------------NAVBAR--------------------*/
+
+
+/*--------------------PRODUCTO--------------------*/
+
+
+#ImgColum{
+    width: 152px;
+    height: 167px;
+    flex-shrink: 0;
+}
+#ImgGrandeColum{ /*Esto usa la imagen de la derecha grande*/
+    width: 444px;
+    height: 530px;
+}
+
+.ImgContainerColumn{ /*Esto centra el contenedor de las 3 imagenes de la izquierda*/
+    
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.imgMainGeneralContainer{ /*Esto maneja el contenedor general de todas las imagenes*/
+    display: flex;
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: -100px;
+    
+    
+    
+    
+}
+.ImgContainerGrande{ /*Esto maneja el contenedor de la imagen grande de la derecha*/
+    margin-left: 15px;
+}
+.sectionMainGeneralContainer{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.detailsProductContainerGeneral{
+    width: 850px;
+    height: 650px;
+
+    /*Esto ayuda a diferenciar el contenedor de los detalles dle producto*/
+}
+.tittleProductContainer{ /*Esto alinea el titulo del producto con el icono del corazon*/
+    display: flex;
+    gap: 150px;
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+
+#tittleText{
+    color: var(--Negro, #000);
+font-family: var(--font-family-title, Montserrat);
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.starsDetailsProductContainer{ /*Esto alinea las estrellas y la calificacion del producto*/
+    display: flex;  
+    position: relative;
+    top: 32px;
+    left: 34px;
+    gap: 16px;
+}
+.ratingContainer{
+    position: relative;
+    top: 2.5px;
+}
+#ratingContainerText{
+    color: var(--Negro, #000);
+font-family: var(--font-family-labels, Roboto);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.priceContainer{ /*Esto alinea el precio y precio con descuento*/
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+} 
+.precioContainerValorContainer,.descuentoContainer,.descuentoContainerPorcentaje{
+    position: relative;
+    top: 10px;
+
+    color: var(--Negro, #000000);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-style: normal;
+    line-height: normal;
+} 
+
+/*Esto se encarga de la parte del precio y precio de decuento*/
+#descuentoText{
+    color: var(--Verde, #92B869);
+font-family: var(--font-family-labels, Roboto);
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration-line: strikethrough;
+text-decoration: line-through;
+    
+}
+#descuentoText2{
+    color: var(--Negro, #000);
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+}
+#precioText{
+    color: var(--Negro, #000);
+font-family: var(--font-family-labels, Roboto);
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+#descuentoText40{
+color: var(--Negro, #000);
+font-family: var(--font-family-labels, Roboto);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+/*Esto se encarga de la parte del precio y precio de decuento*/
+.priceContainerGeneral{
+    position: relative;
+    top: 35px;
+    left: 38px;
+}
+
+.descuentoContainerPorcentaje{ /*Contenedor del decuento con porcentaje ($40%)*/
+position: relative;
+top: 8px;
+    width: 63px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+border-radius: 62px;
+border: 0.5px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+background: var(--verde-30, #B6D09B);
+}
+
+
+/*Description*/
+.descriptionProductContainer{
+    width: 590px;
+    position: relative;
+    top: 53px;
+    left: 33px;
+}
+.linea1{
+    position: relative;
+}
+.linea3{
+    width: 833px !important;
+}
+.linea2{
+    width: 822px !important;
+}
+.linea1,.linea2,.linea3{
+    width: 815px;
+    border-top: 1px solid rgba(78, 78, 78, 0.1); /* Línea negra con 10% de opacidad */
+    margin: 20px 0; /* Mayor separación vertical entre la línea y el contenido */
+}
+#descriptionText{
+    color: var(--Negro, #000);
+
+font-family: var(--font-family-description, "Mukta Vaani");
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 137.5% */
+}
+
+
+/*color*/
+.colorContainerGeneral{
+    position: relative;
+    top: 55px;
+    left: 27px;
+}
+.colorContainer2{
+display: flex;
+gap: 10px;
+
+}
+.colorContainer{
+border-radius: 10px;
+background: var(--blanco-marfil-40, #FCFBF9);
+width: 158px;
+height: 82px;
+padding: 5px;
+flex-direction: column;
+align-items: flex-start;
+gap: 15px;
+flex-shrink: 0;
+}
+
+
+.checkColorContainer{ /*Esto alinea el contenedor del check de los coloress*/
+    position: absolute;
+    position: relative;
+    bottom: 32px;
+    left: 10px;
+}
+
+
+/*Tamaños*/
+.tamanoContainer{ /*Esto alinea los contenedores de los tamaños*/
+display: inline-flex;
+align-items: flex-start;
+gap: var(--font-size-size-xs, 12px);
+margin-left: 10px;
+position: relative;
+top: 5px;
+}
+.Container1,.Container2,.Container4{
+padding: var(--font-size-size-xs, 12px) var(--font-size-size-lg, 24px);
+justify-content: center;
+align-items: center;
+gap: var(--font-size-size-xs, 12px);
+    border-radius: 62px;
+border: 0.5px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+background-color: rgb(218, 208, 187);
+}
+.Container3{
+padding: var(--font-size-size-xs, 12px) var(--font-size-size-lg, 24px);
+justify-content: center;
+align-items: center;
+gap: var(--font-size-size-xs, 12px);
+    border-radius: 62px;
+border: 0.5px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+background: var(--Verde, #92B869);
+}
+.tamanoTittleContainer{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.tamanoContainerGeneral{
+    display: grid;
+    gap: 10px;
+    position: relative;
+    top: 39px;
+    left: 16px;
+}
+
+
+#tamanoText3{
+    color: var(--Blanco, #fff);
+    font-family: var(--font-family-labels, Roboto);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#tamanoText1,#tamanoText2,#tamanoText4{
+
+    color: var(--Blanco, #000);
+    font-family: var(--font-family-labels, Roboto);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#tamanoTittle{
+    color: var(--Negro, #000);
+font-family: var(--font-family-labels, Roboto);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+/*Cantidad, boton comprar y carrito*/
+.buttonycantidadContainerGeneral,.cantidadObjetosContainer{
+    display: flex;
+}
+.cantidadContainerGeneral{
+    border-radius: 62px;
+    border: 0.5px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+    background-color: rgb(218, 208, 187);
+
+}
+
+.buttonycantidadContainerGeneral{
+    position: relative;
+    top: 100px;
+    left: 20px;
+    gap: 25px;
+}
+
+.cantidadContainer{
+    display: flex;
+width: 170px;
+height: 52px;
+padding: 16px var(--font-size-size-md, 20px);
+justify-content: space-between;
+align-items: center;
+flex-shrink: 0;
+
+}
+
+.cantidadObjetosContainer{
+gap: 35px;
+
+}
+
+
+.cantidadNumberContainer{
+    position: relative;
+    top: 3px;
+    
+
+}
+#cantidadText{
+    color: var(--Negro, #000);
+font-family: var(--font-family-labels, Roboto);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+/*Boton comprar*/
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ButtonContainerGeneral{
+
+    white-space: nowrap;
+    width: 240px;
+    height: 52px;
+    padding: 16px 54px;
+    
+    gap: var(--font-size-size-xs, 12px);
+    flex-shrink: 0;
+    border-radius: 62px;
+    border: 0.5px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+    background: var(--Verde, #92B869);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.75);
+}
+#comprarText{
+    color: var(--Blanco, #FFF);
+font-family: var(--font-family-labels, Roboto);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+
+/*Carrito boton*/
+.carritoContainerGeneral{
+display: flex;
+align-items: center;
+place-content: center;
+white-space: nowrap;
+display: flex;
+width: 175px;
+height: 52px;
+padding: 10px;
+border-radius: 62px;
+border: 0.5px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+background: var(--verde-30, #B6D09B);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#carritoText{
+    color: var(--Negro, #000);
+font-family: var(--font-family-labels, Roboto);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+
+/*Productos del vendedor*/
+
+.titleVendedorContainer{ /*Esto controla la fuenta del titutlo principal*/
+    color: var(--Negro, #000);
+    font-family: var(--font-family-title, Montserrat);
+    font-size: var(--font-size-size-lg, 24px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 91.667% */
+    position: relative;
+    left: 70px;
+}
+.sellerContainerMayor{
+    height: 560px;
+}
+.sellerContainerGeneral{
+    height: 557px;
+}
+
+.productsContainerGeneral{ /*Esto pone los productos en horizontal*/
+    display: flex;
+    gap: 325px;
+}
+.estrellasContainer{
+    display: flex;
+}
+.precioContainer{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+}
+
+
+.productsContainerGeneral{
+    position: relative;
+    top: 70px;
+    left: 80px;
+    
+}
+.productContainer1{
+    width: 361px;
+    height: 480px;
+    border-radius: 10px;
+    border: 0.5px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+}
+
+.descuentoContainer{
+    
+    display: flex;
+    padding: 6px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--font-size-size-xs, 12px);
+    
+}
+.imgContainerProduct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.contenedorGeneralproducto{
+    position: relative;
+    top: 30px;
+}
+.detallesContainer{
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 22px;
+}
+.estrellasContainer{
+    gap: 10px;
+}
+.estrellaTextoContainer{
+    position: relative;
+    bottom: -2px;
+    
+}
+
+/*FUENTES*/
+#estrellaTexto{
+    color: var(--Negro, #000);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+#tituloText{
+    color: var(--Negro, #000);
+font-family: var(--font-family-title, Montserrat);
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.descuentoContainer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 80px;
+    height: 36px;
+    border-radius: 62px;
+    background: var(--verde-30, #B6D09B);
+}
+
+
+#precioNegroText{
+    color: var(--Negro, #000);
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+#precioVerdeText{
+text-decoration: line-through;
+color: var(--Verde, #92B869);
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-decoration-line: strikethrough;
+}
+
+
+/*Caracteristicas*/
+.caracteristicasDescripcionContainer{
+    margin-left: 15px;
+    margin-bottom: 100px;
+    
+}
+.caracteristicasDescripcionContainerGeneral{
+    margin-top: 50px;
+    width: 1700px;
+    height: 189px;
+    border-radius: 10px;
+    border: 1px solid rgba(78, 78, 78, 0.1);;
+}
+.caracteristicasContainerGeneral{
+    margin-left: 100px;
+}
+.caracteristicasSection{
+    margin-top: 100px;
+}
+.linea4{
+    width: 1700px;
+    border-top: 1px solid rgba(78, 78, 78, 0.1); /* Línea negra con 10% de opacidad */
+    margin: 0px 0; /* Mayor separación vertical entre la línea y el contenido */
+}
+/*Fuentes*/
+#tituloCaracteristicas{
+    color: var(--Negro, #000);
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}#caracteristicasTexto{
+    color: var(--Negro, #000);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 137.5% */
+}
+
+
+/*opiniones*/
+
+.todaslasresenasContainer,.tituloResenasContainer{
+    display: flex;
+}
+.tituloResenasContainer{
+    margin-left: 20px;
+    gap: 5px;
+    align-items: center;
+}
+
+.rightmenuContainerGeneral{
+    display: flex;
+    gap: 10px;
+    margin-right: 50px;
+}
+.settingsContainer{
+    display: flex;
+width: 48px;
+height: 48px;
+padding: 16px var(--font-size-size-md, 20px);
+justify-content: space-between;
+align-items: center;
+border-radius: 62px;
+background: var(--blanco-marfil, #FBFAF8);
+}
+
+.filtroContainer{
+    display: flex;
+width: 120px;
+height: 48px;
+padding: 16px var(--font-size-size-md, 20px);
+justify-content: space-between;
+align-items: center;
+border-radius: 62px;
+background: var(--blanco-marfil, #FBFAF8);
+}
+.todaslasresenasContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.opinionTituloContainer{
+    margin-left: 20px;
+}
+.linea5{
+    width: 1870px;
+    border-top: 1px solid rgba(78, 78, 78, 0.1); /* Línea negra con 10% de opacidad */
+    margin: 0px 0; /* Mayor separación vertical entre la línea y el contenido */
+}
+.resenaContainer{
+    display: flex;
+width: 190px;
+height: 48px;
+padding: 16px var(--font-size-size-md, 20px);
+justify-content: space-between;
+align-items: center;
+border-radius: 62px;
+background: var(--Verde, #92B869);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#allresenastext{
+    color: var(--Negro, #000);
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+#textresenas2{
+    color: var(--Gris, #666);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+}
+#latestText{
+    color: var(--Negro, #000);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+#resenatext{
+    white-space: nowrap;
+    color: var(--Blanco, #FFF);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+/*comentarios*/
+
+.comentariosContainer{
+    display: flex;
+    flex-direction: column;
+}
+.comentariosGeneralContainer{
+    display: flex;
+}
+.nameContainer{
+    margin-top: 20px;
+}
+.userTextContainer{
+    margin-top: 25px;
+
+}
+.dateContainer{
+    margin-top: 50  px;
+}
+.nameContainer{
+    display: flex;
+    gap: 10px;
+    
+}
+.hola{ /*Esto centro los contenedores de las reseñas*/
+    margin-top: 28px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 28px;
+}
+.userComentContainer{ /*tamaño de los contenedores*/
+    
+    height: 300px;
+    width: 800px;
+    border-radius: var(--font-size-size-md, 20px);
+border: 1px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+}
+#userText{
+    color: var(--Negro, #000);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 137.5% */
+}
+#dateText{
+    color: var(--Negro, #000);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 137.5% */
+}
